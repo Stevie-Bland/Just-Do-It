@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct Just_Do_ItApp: App {
+    
+    @StateObject var listViewModel: ListViewModel = ListViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ListView()
+            }
+            .environmentObject(listViewModel)
         }
     }
 }
+
