@@ -22,7 +22,7 @@ struct AddView: View {
                     .multilineTextAlignment(.center)
                     .padding(.leading)
                     .frame(height: 50)
-                    .background(Color("TextFieldColor"))
+                    .background(Color(UIColor.secondarySystemBackground))
                     .cornerRadius(50)
 
                 Button(action: saveButtonPressed, label: {

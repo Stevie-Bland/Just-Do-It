@@ -17,7 +17,9 @@ struct Just_Do_ItApp: App {
             NavigationView {
                 ListView()
             }
+            .navigationViewStyle(StackNavigationViewStyle())
             .environmentObject(listViewModel)
+            
         }
     }
 }
